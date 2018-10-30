@@ -1,0 +1,59 @@
+{% block content %}
+<html>
+ <h1 style="text-align: center;">Orden de Trabajo</h1>
+ <body>
+ <div style="margin-bottom: 25px;">
+ <table style="width: 100%; margin-bottom: 30px;">
+ <tr>
+ 	<th style="text-align: center;">Orden de Trabajo</th>
+ 	<th style="text-align: center;">Fecha: </th>
+ 	</tr>
+ <tr>
+ 	<td style="text-align: center;">{{id}}</td>
+ 	<td style="text-align: center;">{{fecha}}</td>
+ </tr>
+ </table>
+ <table style="width: 100%; margin-bottom: 20px;">
+ 	<tr>
+	<th style="text-align: center;">Departamento</th>
+	<th style="text-align: center;">Solicitante</th> 
+	</tr>
+	<tr>
+	<td style="text-align: center;">{{departamento}}</td>
+	<td style="text-align: center;">{{usuario}}</td>
+	</tr>
+ </table>
+ </div>
+ <div>
+ <table style="width: 100%;">
+	<tr>
+	<th style="text-align: center;">Tipo</th>
+	<th style="text-align: center;">Criticidad</th>
+	<th style="text-align: center;">Incidencia</th>
+	</tr>
+	<tr>
+	<td style="text-align: center;">{{tipo}}</td>
+	<td style="text-align: center;">{{criticidad}}</td>
+	<td style="text-align: center;">{{incidencia}}</td>	
+	</tr> 
+ </table>
+ </div>
+ <div>
+<table style="width: 100%;">
+<tr>
+<th style="text-align: center;">Maquina</th>
+<th style="text-align: center;">Responsable</th>
+</tr>
+<tr>
+<td style="text-align: center;">{{maquina}}</td>
+<td style="text-align: center;">{{responsable}}</td>
+</tr>
+</table> 
+ </div>
+ <div style="width: 100%; text-align: center;">
+ <h3>Descripcion</h3>
+ <p>{{descripcion}}</p>
+ </div>
+</body> 
+</html>
+{% endblock %}
